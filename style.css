@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Red Hat Display', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    background-color: #212121;
+}
+
+header {
+    padding: 3rem 6rem 0 6rem;
+}
+
+.ul-header {
+    display: flex;
+    list-style: none;
+}
+
+.logo {
+    width: 8rem;
+    border-radius: 25px;
+}
+
+.nav-container-links {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    align-items: center;
+}
+
+.nav-anchor {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 3rem;
+}
+
+.nav-anchor:active, .nav-anchor:hover {
+    color: #34e7e7;
+}
+
+#welcome-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 6rem;
+    height: 100vh;
+}
+
+.welcome-container-title {
+    margin-top: 5rem;
+}
+
+.title{ 
+    font-size: 85px;
+    color: white;
+}
+
+.efectoHover1:hover {
+    color: #34e7e7;
+    transition: ease-in 0.25s;
+}
+
+.efectoHover2:hover {
+    color: #E73434;
+    transition: ease-in 0.25s;
+}
+
+.efectoHover3:hover {
+    color: #348ee7;
+    transition: ease-in 0.25s;
+}
+
+.efectoHover4:hover{
+    color: #34e78e;
+    transition: ease-in 0.25s;
+}
+
+.btn-contacto {
+    padding: 1rem;
+    border-radius: 18px;
+    margin-top: 1.5rem;
+    width: 10rem;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: transparent;
+    color: white;
+    border: solid 2px white;
+}
+
+.btn-contacto:hover {
+    background-color: #34e7e7;
+    color: #212121;
+    transition: all ease 2s;
+    border: none;
+    border-bottom: white 2px solid;
+}
+
+.foto-alan {
+    width: 36rem;
+}
+
+.titulo-proyectos{
+    color: white;
+}
