@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="style.css">
     <title>Alan Bensi developer portfolio</title>
 </head>
@@ -33,9 +34,65 @@
         </section>
         <section id="projects">
             <h2 class="titulo-proyectos">Estos son algunos de mis proyectos</h2>
-            <div></div>
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <a href="https://alanbensi.github.io/Nutricion.JG/" target="_blank" class="flexCenter">
+                            <img src="images/Nutricion-JG.png" alt="" class="imagenesProyectos">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://alanbensi.github.io/contador-de-calorias/" target="_blank" class="flexCenter">
+                            <img src="images/Contador-de-calorias.png" alt="" class="imagenesProyectos">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://alanbensi.github.io/ATLAS-trading-source/" target="_blank" class="flexCenter">
+                            <img src="images/Atlas-trading-source.png" class="imagenesProyectos" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://alanbensi.github.io/TributePageFCC/" target="_blank" class="flexCenter">
+                            <img src="images/FCC-tribute-page.png" class="imagenesProyectos" alt="">
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a href="https://alanbensi.github.io/FCC-SurveyForm/" target="_blank" class="flexCenter">
+                            <img src="images/FCC-survey-form.png" class="imagenesProyectos" alt="">
+                        </a>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </section>
     </main>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+    direction: 'horizontal',
+    loop: true,
+    effect: 'coverflow',
+
+    // If we need pagination
+    pagination: {
+        el: '.swiper-pagination',
+    },
+
+    // Navigation arrows
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+});
+</script>
 </body>
 </html>

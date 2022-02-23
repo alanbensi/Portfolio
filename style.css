@@ -90,6 +90,7 @@ header {
     background-color: transparent;
     color: white;
     border: solid 2px white;
+    cursor: pointer;
 }
 
 .btn-contacto:hover {
@@ -104,6 +105,38 @@ header {
     width: 36rem;
 }
 
+#projects {
+    height: 40rem;
+}
+
 .titulo-proyectos{
     color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+.swiper {
+    width: 1100px;
+    height: 450px;
+    padding-top: 3rem;
+    background-color: #303030;
+    border: solid 1px white;
+    border-radius: 5px;
+}
+
+.swiper-slide {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 600px;
+    height: 400px;
+}
+
+.flexCenter {
+    display: flex;
+    justify-content: center;
+}
+
+.imagenesProyectos {
+    width: 800px;
 }
