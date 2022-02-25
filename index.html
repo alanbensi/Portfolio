@@ -16,7 +16,7 @@
                     <li><a href=""><img class="logo" src="" alt="Logo"></a></li>
                 </div>
                 <div class="nav-container-links">
-                    <li><a class="nav-anchor" href="#projects">Mis proyectos</a></li>
+                    <li><a class="nav-anchor" href="index.html#projects">Mis proyectos</a></li>
                     <li><a class="nav-anchor" href="">Contacto</a></li>
                 </div>
             </ul>
@@ -40,29 +40,69 @@
                 <div class="swiper-wrapper">
                     <!-- Slides -->
                     <div class="swiper-slide">
-                        <a href="https://alanbensi.github.io/Nutricion.JG/" target="_blank" class="flexCenter">
-                            <img src="images/Nutricion-JG.png" alt="" class="imagenesProyectos">
-                        </a>
+                        <div class="contenedorProyectos">
+                            <div style="position: relative;">
+                                <a href="https://alanbensi.github.io/Nutricion.JG/" target="_blank">
+                                    <img src="images/Nutricion-JG.png" alt="Página Nutricion JG" class="imagenesProyectos">
+                                    <div class="capaProyectos">
+                                        <h3 class="nombreProyecto">Nutrición JG</h3>
+                                        <p class="textoDelServicio"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://alanbensi.github.io/contador-de-calorias/" target="_blank" class="flexCenter">
-                            <img src="images/Contador-de-calorias.png" alt="" class="imagenesProyectos">
-                        </a>
+                        <div class="contenedorProyectos">
+                            <div style="position: relative;">
+                                <a href="https://alanbensi.github.io/contador-de-calorias/" target="_blank">
+                                    <img src="images/Contador-de-calorias.png" alt="Página contador de calorías" class="imagenesProyectos">
+                                    <div class="capaProyectos">
+                                        <h3 class="nombreProyecto">Contador de calorías</h3>
+                                        <p class="textoDelServicio"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://alanbensi.github.io/ATLAS-trading-source/" target="_blank" class="flexCenter">
-                            <img src="images/Atlas-trading-source.png" class="imagenesProyectos" alt="">
-                        </a>
+                        <div class="contenedorProyectos">
+                            <div style="position: relative;">
+                                <a href="https://alanbensi.github.io/ATLAS-trading-source/" target="_blank">
+                                    <img src="images/Atlas-trading-source.png" class="imagenesProyectos" alt="Página Atlas trading source">
+                                    <div class="capaProyectos">
+                                        <h3 class="nombreProyecto">Atlas Trading Source</h3>
+                                        <p class="textoDelServicio"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://alanbensi.github.io/TributePageFCC/" target="_blank" class="flexCenter">
-                            <img src="images/FCC-tribute-page.png" class="imagenesProyectos" alt="">
-                        </a>
+                        <div class="contenedorProyectos">
+                            <div style="position: relative;">
+                                <a href="https://alanbensi.github.io/TributePageFCC/" target="_blank">
+                                    <img src="images/FCC-tribute-page.png" class="imagenesProyectos" alt="Página tributo Free code camp">
+                                    <div class="capaProyectos">
+                                        <h3 class="nombreProyecto">Tribute page Free code camp</h3>
+                                        <p class="textoDelServicio"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="swiper-slide">
-                        <a href="https://alanbensi.github.io/FCC-SurveyForm/" target="_blank" class="flexCenter">
-                            <img src="images/FCC-survey-form.png" class="imagenesProyectos" alt="">
-                        </a>
+                        <div class="contenedorProyectos">
+                            <div style="position: relative;">
+                                <a href="https://alanbensi.github.io/FCC-SurveyForm/" target="_blank">
+                                    <img src="images/FCC-survey-form.png" class="imagenesProyectos" alt="Página formulario Free code camp">
+                                    <div class="capaProyectos">
+                                        <h3 class="nombreProyecto">Formulario de valoración Free code camp</h3>
+                                        <p class="textoDelServicio"></p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!-- If we need pagination -->
@@ -72,27 +112,23 @@
                 <div class="swiper-button-next"></div>
             </div>
         </section>
+        <section class="seccionHabilidades">
+            <h2 class="tituloHabilidades">Habilidades que manejo actualmente:</h2>
+            <div class="contenedorHabilidades">
+                <p class="text">HTML5</p>
+                <p class="text">CSS3</p>
+                <p class="text">JAVASCRIPT</p>
+                <p class="text">BOOTSTRAP</p>
+                <p class="text">SEO</p>
+                <p class="text">SASS</p>
+                <p class="text">GIT</p>
+                <p class="text">GITHUB</p>
+                <p class="text">JQUERY</p>
+            </div>
+        </section>
     </main>
 <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-<script>
-    const swiper = new Swiper('.swiper', {
-  // Optional parameters
-    direction: 'horizontal',
-    loop: true,
-    effect: 'coverflow',
-
-    // If we need pagination
-    pagination: {
-        el: '.swiper-pagination',
-    },
-
-    // Navigation arrows
-    navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-    },
-});
-</script>
+<script src="main.js"></script>
 </body>
 </html>

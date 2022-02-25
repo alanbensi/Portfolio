@@ -1,18 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&display=swap');
+
+
 
 * {
     margin: 0;
     padding: 0;
     font-family: 'Red Hat Display', sans-serif;
     letter-spacing: 1px;
+    scroll-behavior: smooth;
 }
 
 body {
-    background-color: #212121;
+    background-color: #303030;
 }
 
 header {
     padding: 3rem 6rem 0 6rem;
+    background-color: #212121;
 }
 
 .ul-header {
@@ -49,6 +54,7 @@ header {
     justify-content: space-evenly;
     padding: 0 6rem;
     height: 100vh;
+    background-color: #212121;
 }
 
 .welcome-container-title {
@@ -106,21 +112,21 @@ header {
 }
 
 #projects {
-    height: 40rem;
+    height: 100vh;
 }
 
 .titulo-proyectos{
     color: white;
     text-align: center;
-    padding: 2rem;
+    padding: 4rem;
+    font-size: 30px;
 }
 
 .swiper {
-    width: 1100px;
+    width: 90%;
     height: 450px;
     padding-top: 3rem;
-    background-color: #303030;
-    border: solid 1px white;
+    background-color: #212121;
     border-radius: 5px;
 }
 
@@ -132,11 +138,114 @@ header {
     height: 400px;
 }
 
-.flexCenter {
+.contenedorProyectos {
+    width: 100%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .imagenesProyectos {
     width: 800px;
+    box-shadow: 12px 11px 13px -2px rgba(0,0,0,0.6);
+}
+
+.capaProyectos {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.75);
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.capaProyectos:hover {
+    opacity: 1;
+    transition: all ease-out 1s;
+}
+
+.nombreProyecto{
+    font-size: 30px;
+    color: white;
+    font-family: 'Mate SC', serif;
+    letter-spacing: 2px;
+}
+
+.swiper-button-prev, .swiper-button-next{
+    color: #34e7e7;
+}
+
+.swiper-pagination-bullet {
+    background-color: #34e7e7;
+    width: 15px;
+    height: 15px;
+}
+
+.seccionHabilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 3rem;
+    background-color: #212121;
+}
+
+.tituloHabilidades {
+    color: white;
+    padding: 4rem;
+    font-size: 30px;
+}
+
+#canvasHabilidades {
+    border: 2px solid red;
+    width: 600px;
+    height: 500px;
+}
+
+.contenedorHabilidades {
+    border: solid #34e7e7 3px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    animation-name: colorBorde;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+.text {
+    font-size: 16px;
+    color: white;
+    padding: 2rem;
+    animation-name: colorTexto;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorTexto{
+    0% {
+        color: #E73434;
+    }
+    50% {
+        color: #34e7e7;
+        font-size: 20px;
+    }
+    100% {
+        color: #E73434;
+    }
+}
+
+@keyframes colorBorde{
+    0% {
+        border: #34e7e7 solid 3px;
+    }
+    50% {
+        border: #E73434 solid 3px;
+    }
+    100% {
+        border: #34e7e7 solid 3px;
+    }
 }
