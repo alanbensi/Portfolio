@@ -12,15 +12,15 @@
     <header>
         <nav id="navbar">
             <ul class="ul-header">
-                <div>
+                <!-- <div>
                     <li><a href=""><img class="logo" src="" alt="Logo"></a></li>
-                </div>
+                </div> -->
                 <div class="nav-container-links">
                     <li>
                         <a class="nav-anchor nav-1" href="index.html#projects">Mis proyectos</a>
+                        <a class="nav-anchor nav-2" href="#hola">Contacto</a>
                     </li>
                     <li>
-                        <a class="nav-anchor nav-2" href="">Contacto</a>
                     </li>
                 </div>
             </ul>
@@ -33,7 +33,7 @@
                 <button class="btn-contacto">Contactame!</button>
             </div>
             <div>
-                <img class="foto-alan" src="images/Foto-Alan-Bensi.png" alt="">
+                <img class="foto-alan" src="images/Foto-Alan-Bensi.png" alt="Foto Alan Bensi">
             </div>
         </section>
         <section id="projects">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="swiper-slide">
-                        <div class="contenedorProyectos">
+                        <div class="contenedorProyectos project-tile">
                             <div style="position: relative;">
                                 <a href="https://alanbensi.github.io/contador-de-calorias/" target="_blank">
                                     <img src="images/Contador-de-calorias.png" alt="Página contador de calorías" class="imagenesProyectos">
@@ -117,9 +117,9 @@
             </div>
         </section>
         <section class="seccionHabilidadesContacto">
-            <div class="containerHabilidadesContacto">
+            <div class="containerHabilidades">
                 <h2 class="tituloHabilidades">Habilidades que manejo actualmente:</h2>
-                <div class="contenedorHabilidades">
+                <div class="contenedorTextosHabilidades">
                     <p class="textoHabilidad">HTML5</p>
                     <p class="textoHabilidad">CSS3</p>
                     <p class="textoHabilidad">JAVASCRIPT</p>
@@ -131,12 +131,77 @@
                     <p class="textoHabilidad">JQUERY</p>
                 </div>
             </div>
-            <div class="">
-                <h2 class="tituloContacto">Ponete en contacto conmigo</h2>
+            <div id="hola" class="containerContacto">
+                <div class="containerContactoTitulo">
+                    <div class="containerEmojisTitulo">
+                        <h2 class="tituloContacto">Pongámonos en contacto</h2>
+                        <img class="emojis" src="images/emoji-cara-feliz.png" alt="Emoji cara feliz">
+                        <img class="emojis" src="images/emoji-guiño.png" alt="Emoji cara guiño">
+                    </div>
+                    <div>
+                        <p class="textoContacto">Actualmente estoy disponible y abierto a recibir oportunidades laborales tanto en empresas como en proyectos Freelance. <br> Voy a estar muy contento de recibir tu comunicación!!</p>
+                    </div>
+                    <div>
+                        <ul class="listaIzquierdaContacto">
+                            <div class="containerAnchorsContacto">
+                                <li class="itemIconosContacto">
+                                    <a href="https://wa.me/+5491136327090?text=Hola%20Alan!" target="_blank">
+                                        <img class="iconosContacto" src="images/whatsapp.png" alt="Whatsapp">
+                                    </a>
+                                </li>
+                                <a href="https://wa.me/+5491136327090?text=Hola%20Alan!" target="_blank" class="mediosContacto">Whatsapp</a>
+                            </div>
+                            <div class="containerAnchorsContacto">
+                                <li class="itemIconosContacto">
+                                    <a href="https://github.com/alanbensi" target="_blank">
+                                        <img class="iconosContacto" src="images/github.png" alt="Github">
+                                    </a>
+                                </li>
+                                <a id="profile-link" href="https://github.com/alanbensi" target="_blank" class="mediosContacto">Github</a>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="containerListaContacto">
+                    <ul class="listaItemsContacto">
+                        <div class="containerAnchorsContacto">
+                            <li class="itemIconosContacto">
+                                <a href="tel:+54-9-1136327090">
+                                    <img class="iconosContacto" src="images/Celular.png" alt="Imagen Telefono">
+                                </a>
+                            </li>
+                            <a href="tel:+54-9-1136327090" class="mediosContacto">Telefono: +54 9 1136327090</a>
+                        </div>
+                        <div class="containerAnchorsContacto">
+                            <li class="itemIconosContacto">
+                                <a href="mailto:alanbensi9@gmail.com" target="_blank">
+                                    <img class="iconosContacto" src="images/email.png" alt="Mail">
+                                </a>
+                            </li>
+                            <a href="mailto:alanbensi9@gmail.com" target="_blank" class="mediosContacto">Email: alanbensi9@gmail.com</a>
+                        </div>
+                        <div class="containerAnchorsContacto">
+                            <li class="itemIconosContacto">
+                                <a href="https://www.linkedin.com/in/alanbensi/" target="_blank">
+                                    <img class="iconosContacto" src="images/linkedin.png" alt="Linkedin">
+                                </a>
+                            </li>
+                            <a href="https://www.linkedin.com/in/alanbensi/" target="_blank" class="mediosContacto">Linkedin </a>
+                        </div>
+                        <div class="containerAnchorsContacto">
+                            <li class="itemIconosContacto">
+                                <a href="https://www.google.com.ar/maps/place/Buenos+Aires,+CABA/@-34.6158037,-58.5033387,12z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591" target="_blank">
+                                    <img class="iconosContacto" src="images/Ubicacion.png" alt="Google Maps">
+                                </a>
+                            </li>
+                            <a href="https://www.google.com.ar/maps/place/Buenos+Aires,+CABA/@-34.6158037,-58.5033387,12z/data=!3m1!4b1!4m5!3m4!1s0x95bcca3b4ef90cbd:0xa0b3812e88e88e87!8m2!3d-34.6036844!4d-58.3815591" target="_blank" class="mediosContacto">Ubicacion: Buenos Aires, Argentina </a>
+                        </div>
+                    </ul>
+                </div>
             </div>
         </section>
     </main>
-<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 <script src="main.js"></script>
 </body>
