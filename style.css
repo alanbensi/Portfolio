@@ -797,7 +797,7 @@ header {
         padding-top: 8rem;
     }
     .nav-anchor {
-        font-size: 40px;
+        font-size: 35px;
     }
     .title{ 
         font-size: 70px;
@@ -817,7 +817,7 @@ header {
         width: 42rem;
     }
     .titulo-proyectos{
-        font-size: 45px;
+        font-size: 35px;
     }
     .swiper {
         width: 95%;
@@ -841,7 +841,7 @@ header {
         height: 20px;
     }   
     .tituloHabilidades {
-        font-size: 45px;
+        font-size: 35px;
     }
     .textoHabilidad {
         font-size: 20px;
@@ -871,12 +871,11 @@ header {
         }
     }      
     .tituloContacto {
-        font-size: 40px;
+        font-size: 35px;
     }
     .emojis {
-        height: 7rem;
+        height: 6rem;
     }
-    
     .textoContacto {
         font-size: 25px;
     }
