@@ -373,21 +373,26 @@ header {
 
 @media only screen and (max-width: 480px) {
     body {
-        overflow-x: hidden;
+        padding: 0 0.1rem;
     }
     header{
-        padding: 4rem 0;
+        padding: 0;
     }
     .nav-container-links {
+        margin: 2rem 0 3rem 0;
         flex-direction: column;
-        justify-content: space-between;
+    }
+    .nav-container-links li {
+        margin: 1rem;
     }
     .nav-anchor {
         font-size: 25px;
-        padding: 3rem 0;
     }
     .nav-anchor::before {
         display: none;
+    }
+    .nav-1, .nav-2 {
+        padding: 0;
     }
     .nav-1:focus{
         color: #E73563;
@@ -432,16 +437,20 @@ header {
     .btn-contacto:focus, .btn-contacto:hover {
         padding: 1rem 4rem;
     }
+    .containerImagenAlan{
+        display: flex;
+        justify-content: center;
+    }
     .foto-alan{
-        display: none;
+        width: 20rem;
+        margin-top: -3rem;
     }
     #projects {
         height: auto;
     }
     .swiper {
-        width: 100%;
+        width: 95%;
         height: 300px;
-        padding: 0 0.5rem;
     } 
     .swiper-slide {
         width: 100%;
@@ -449,12 +458,17 @@ header {
     .imagenesProyectos {
         width: 500px;
     }
+    .capaProyectos {
+        width: 100%;
+        height: 110%;
+    }
     .capaProyectos:focus {
         opacity: 1;
         transition: all ease-out 1s;
     }
     .nombreProyecto{
         font-size: 20px;
+        max-width: 300px;
     }
     .textoDelServicio{
         padding: 0rem;
@@ -529,5 +543,347 @@ header {
     .containerItemsContactoCelular{
         display: flex;
         flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    body {
+        padding: 0 0.2rem;
+    }
+    header{
+        padding: 0;
+    }
+    .nav-container-links {
+        margin: 2rem 0;
+        justify-content: space-evenly;
+    }
+    .nav-container-links li {
+        margin: 1rem;
+    }
+    .nav-anchor {
+        font-size: 25px;
+    }
+    .nav-anchor::before {
+        display: none;
+    }
+    .nav-1, .nav-2 {
+        padding: 0;
+    }
+    .nav-1:focus{
+        color: #E73563;
+    }
+    .nav-2:focus {
+        color: #34e7e7;
+    }
+    #welcome-section {
+        flex-direction: column;
+        padding: 0rem;
+        height: auto;
+    }
+    .title{ 
+        font-size: 40px;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .nombreSubrayado {
+        font-size: 40px;
+        text-align: center;
+    }
+    .efectoHover1:focus {
+        color: #34e7e7;
+        transition: ease-in 0.25s;
+    }
+    .efectoHover2:focus {
+        color: #E73563;
+        transition: ease-in 0.25s;
+    }
+    .efectoHover3:focus {
+        color: #348ee7;
+        transition: ease-in 0.25s;
+    }
+    .efectoHover4:focus{
+        color: #34e78e;
+        transition: ease-in 0.25s;
+    }
+    .containerBtnContacto {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .btn-contacto:focus, .btn-contacto:hover {
+        padding: 1rem 4rem;
+    }
+    .containerImagenAlan{
+        display: flex;
+        justify-content: center;
+    }
+    .foto-alan{
+        width: 25rem;
+        margin-top: -3rem;
+    }
+    #projects {
+        height: auto;
+    }
+    .swiper {
+        width: 95%;
+        height: 300px;
+    } 
+    .swiper-slide {
+        width: 100%;
+    }
+    .imagenesProyectos {
+        width: 500px;
+    }
+    .capaProyectos {
+        width: 100%;
+        height: 100%;
+    }
+    .capaProyectos:focus {
+        opacity: 1;
+        transition: all ease-out 1s;
+    }
+    .nombreProyecto{
+        font-size: 20px;
+        max-width: 300px;
+    }
+    .textoDelServicio{
+        padding: 0rem;
+        margin: 1rem;
+        max-width: 300px;
+        text-align: center;
+        font-size: 12px;
+    }
+    .tituloHabilidades {
+        text-align: center;
+        padding: 1rem 0.5rem 3rem 0.5rem;
+    }
+    .contenedorTextosHabilidades {
+        animation-duration: 2s;
+    }
+    .textoHabilidad {
+        animation-name: colorTextoCelular;
+        animation-duration: 2s;
+    }
+
+    @keyframes colorTextoCelular{
+        0% {
+            color: #E73563;
+        }
+        50% {
+            color: #34e7e7;
+            font-size: 18px;
+        }
+        100% {
+            color: #E73563;
+        }
+    }
+    .containerContacto {
+        flex-direction: column;
+        padding: 0;
+    }
+    .containerContactoTitulo {
+        width: 100%;
+    }
+    .tituloContacto, .emojis, .containerItemsIzquierda, .containerListaContacto {
+        display: none;
+    }
+    .tituloContactoCelular{ 
+        display: block;
+        text-align: center;
+        color: white;
+        padding: 2.5rem 0.5rem;
+    }
+    .textoContacto{
+        font-size: 17px;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    .listaIzquierdaContacto {
+        flex-direction: column;
+        padding: 0;
+        padding-top: 2rem;
+    }
+    .itemIconosContacto {
+        padding: 0.8rem 0.7rem 0.5rem 0.7rem;
+        margin: 1rem;
+    }
+    .itemIconosContacto:focus {
+        background-color: #34e7e7;
+    }
+    .mediosContacto {
+        font-size: 17px;
+    }
+    .mediosContacto:focus {
+        text-decoration: underline;
+    }
+    .containerItemsContactoCelular{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) { 
+    body {
+        padding: 0 0.2rem;
+    }
+    #welcome-section {
+        padding: 2rem;
+    }
+    .title{ 
+        font-size: 27px;
+        margin-top: 5rem;
+    }
+    .nombreSubrayado {
+        font-size: 45px;
+    }
+    .containerBtnContacto {
+        margin-bottom: 2rem;
+    }
+    .btn-contacto:hover {
+        padding: 1rem 5rem;
+    }
+    .foto-alan{
+        width: 28rem;
+    }
+    #projects {
+        height: auto;
+    }
+
+    .tituloHabilidades {
+        text-align: center;
+        padding: 3.5rem;
+    }
+    .containerContacto {
+        padding: 3rem;
+    }
+    .containerContactoTitulo {
+        width: 100%;
+        padding: 2rem;
+    }
+    .tituloContactoCelular{ 
+        display: none;
+    }
+    .textoContacto{
+        font-size: 17px;
+        text-align: center;
+        padding: 0 0.5rem;
+    }
+    .listaIzquierdaContacto {
+        padding-top: 2rem;
+    }
+    .itemIconosContacto {
+        padding: 0.8rem 0.7rem 0.5rem 0.7rem;
+        margin: 1rem;
+    }
+    .itemIconosContacto:focus {
+        background-color: #34e7e7;
+    }
+    .mediosContacto {
+        font-size: 17px;
+    }
+    .containerItemsContactoCelular{
+        display: none;
+    }
+    .listaItemsContacto {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        flex-direction: row;
+    }
+}
+
+@media screen and (min-width: 1540px) and (max-width: 2500px) {        
+    header {
+        padding-top: 8rem;
+    }
+    .nav-anchor {
+        font-size: 40px;
+    }
+    .title{ 
+        font-size: 70px;
+    }
+    .nombreSubrayado {
+        font-size: 140px;
+    }
+    .btn-contacto {
+        padding: 1rem 2rem;
+        font-size: 25px;
+    }
+    .btn-contacto:hover {
+        padding: 1rem 19rem;
+        font-size: 30px;
+    }
+    .foto-alan {
+        width: 42rem;
+    }
+    .titulo-proyectos{
+        font-size: 45px;
+    }
+    .swiper {
+        width: 95%;
+        height: 550px;
+    }
+    .swiper-slide {
+        width: 800px;
+        height: 500px;
+    }
+    .imagenesProyectos {
+        width: 1000px;
+    }
+    .nombreProyecto{
+        font-size: 45px;
+    }
+    .textoDelServicio{
+        font-size: 25px;
+    }
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+    }   
+    .tituloHabilidades {
+        font-size: 45px;
+    }
+    .textoHabilidad {
+        font-size: 20px;
+    }
+    @keyframes colorTexto{
+        0% {
+            color: #E73563;
+        }
+        50% {
+            color: #34e7e7;
+            font-size: 24.8px;
+        }
+        100% {
+            color: #E73563;
+        }
+    }
+    
+    @keyframes colorBorde{
+        0% {
+            border: #34e7e7 solid 3px;
+        }
+        50% {
+            border: #E73563 solid 3px;
+        }
+        100% {
+            border: #34e7e7 solid 3px;
+        }
+    }      
+    .tituloContacto {
+        font-size: 40px;
+    }
+    .emojis {
+        height: 7rem;
+    }
+    
+    .textoContacto {
+        font-size: 25px;
+    }
+    .iconosContacto {
+        width: 2.5rem;
+    }
+    .mediosContacto {
+        font-size: 25px;
     }
 }
