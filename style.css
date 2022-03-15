@@ -495,7 +495,6 @@ header {
         }
         50% {
             color: #34e7e7;
-            font-size: 18px;
         }
         100% {
             color: #E73563;
@@ -797,7 +796,7 @@ header {
         padding-top: 8rem;
     }
     .nav-anchor {
-        font-size: 35px;
+        font-size: 28px;
     }
     .title{ 
         font-size: 70px;
